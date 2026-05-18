@@ -15,7 +15,7 @@ export default function CaterersPage() {
 
   const fetchCaterers = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/caterers");
+      const res = await axios.get("https://caterers-platform-fullstack.onrender.com/api/caterers");
 
       setCaterers(res.data);
       setFilteredCaterers(res.data);
